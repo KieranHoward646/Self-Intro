@@ -17,7 +17,7 @@
 
 | | 中文 | English |
 |---|---|---|
-| **🅰️ A 面 · 专业** | 人大财金金融工程的底色：券商实习、美赛 / 创新杯、心镜 Mind·Mirror AI 智能体。 | Roots in Finance Engineering at RUC: research internships, MCM / innovation awards, the Mind·Mirror AI agent. |
+| **🅰️ A 面 · 专业** | 实习、竞赛 / 创新杯、AI 智能体项目。 | Roots in Finance Engineering at RUC: research internships, MCM / innovation awards, the Mind·Mirror AI agent. |
 | **🅱️ B 面 · 生活** | 極爱乐队（JIAI）主笔与吉他手，自运营乐队公众号、吉他视频号。 | Lead writer & guitarist of JIAI band; runs its official account and a guitar video channel. |
 | **🌗 日夜双模** | 右上角按钮切换，偏好写入 localStorage。 | Top-right toggle; choice persisted in localStorage. |
 | **🧭 锚点导航** | Hero 双胶囊平滑滚到 A / B。 | Hero pills smooth-scroll to A / B. |
@@ -39,7 +39,6 @@
 - 📱 **响应式 / Responsive** — 桌面双栏，375px 窄屏自动堆叠，无横向滚动。
 - 🧊 **玻璃质感 / Glassmorphism** — `backdrop-filter` 半透明卡片，日夜间都看得出层次。
 - 🪪 **媒体卡片 / Media cards** — 公众号 / 视频号双卡，头像 + 二维码 base64 内联，附外链。
-- 🔒 **隐私优先 / Privacy-first** — 不放真名、手机号、邮箱、Token、学号。
 
 ---
 
@@ -77,48 +76,13 @@ index.html  (≈ 1 MB, 单文件)
 
 ---
 
-## 快速开始 · Quick Start
-
-**中文** — 下载仓库后，**双击 `index.html`** 即可在浏览器打开，无需服务器、联网或安装。改内容：所有素材与文案由 `build.py` 注入，运行一条命令重生成：
-
-```bash
-python build.py   # 重新生成 index.html（注入 base64 图片）
-```
-
-**English** — After cloning, **double-click `index.html`** to open in a browser — no server, network, or install needed. To edit: all assets and copy are injected by `build.py`; regenerate with:
-
-```bash
-python build.py   # regenerate index.html (injects base64 images)
-```
-
----
-
 ## 设计背后的思考 · Design Notes
 
 - **玻璃感在两种底色上都成立**：卡片底色用半透明白、叠在暖橙渐变上，再配暖色低透明度阴影——亮背景不“飘”，暗背景不“脏”。
 - **1:1 篇幅控制**：用「单页滚动分区」而非「左右双栏常驻」，移动端堆叠更稳，也更易满足“窄屏无横向滚动”。
 - **公众号 / 视频号展示**：5 张素材全部 base64 内联；视频号无公开网页 embed，做成「封面 + 标题 + 跳转链接」。
-- **奖项标注时间戳**：心镜项目下抽“项目荣誉 · 截至 2026/07”，浅蓝背景 + 深海蓝竖条包住 3 个奖项，比纯胶囊更有“被认证”感。
 
 *Glass works on both backgrounds · 1:1 held via zoning · accounts shown via inlined base64 · awards stamped with a date for credibility.*
-
----
-
-## 未来计划 · Roadmap
-
-- 🎸 吉他历程板块：补学琴年限、主攻风格与音乐偶像（已预留位置，未编造）。
-- 🎬 视频号封面：为 3 条视频抓取封面，卡片升级为「封面 + 标题」。
-- 📷 真人中页照片（可选）：如接受，加入一张职业/乐队照。
-- 🌐 双语站点：把 `index.html` 文案也做成 CN/EN 切换。
-
----
-
-## 隐私与边界 · Privacy & Boundaries
-
-> ⚠️ 本页不展示真名、手机号、邮箱、API Key、Token 或学号。对外统一以「主笔 · Kieran Howard」呈现，学校与专业作为背景标签保留。仓库中同样不含上述敏感信息。
->
-> ⚠️ This page shows no real name, phone, email, API keys, tokens, or student ID. It presents “Lead writer · Kieran Howard” externally; school and major are kept as background tags only. The repo contains none of the above.
-
 ---
 
 *KieranHoward · 个人主页 — 用一支笔，写理性与感性。 / one pen for reason and feeling.*
