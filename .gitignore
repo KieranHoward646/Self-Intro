@@ -1,0 +1,12 @@
+# WorkBuddy project metadata
+.workbuddy/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*~
+
+# local build artifacts (keep build.py; ignore temp copies)
+_dark.html
+_readme_*.html
+_readme_*.png
